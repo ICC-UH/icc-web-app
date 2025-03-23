@@ -1,13 +1,17 @@
-# Welcome to Remix!
+# ICC UH Web App
 
-- 📖 [Remix docs](https://remix.run/docs)
+ICC UH Web App is a Web Application used by ICC UH for business and exposure.
+
+## Contributing
+
+Create a branch for each task/feature using conventions from [conventionalcommits.org](https://www.conventionalcommits.org/en/v1.0.0/). Always rebase from the develop branch first.
 
 ## Development
 
-Run the dev server:
+Run the development server:
 
 ```shellscript
-npm run dev
+bun dev
 ```
 
 ## Deployment
@@ -15,26 +19,23 @@ npm run dev
 First, build your app for production:
 
 ```sh
-npm run build
+bun build
 ```
 
 Then run the app in production mode:
 
 ```sh
-npm start
+bun start
 ```
 
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
+Make sure to deploy the output of `bun build`:
 
 - `build/server`
 - `build/client`
 
-## Styling
+## Tech Stack
 
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+- Language: Typescript
+- Framework: Remix (React)
+- Caching: [Tanstack Query](https://tanstack.com/query)
+- UI Framework: [Tailwind CSS](https://tailwindcss.com/)

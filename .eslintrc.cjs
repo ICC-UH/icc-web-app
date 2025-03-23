@@ -22,7 +22,12 @@ module.exports = {
   ignorePatterns: ["!**/.server", "!**/.client"],
 
   // Base config
-  extends: ["eslint:recommended"],
+  extends: [
+    "eslint:recommended",
+    "prettier",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+  ],
 
   overrides: [
     // React
@@ -53,7 +58,7 @@ module.exports = {
     // Typescript
     {
       files: ["**/*.{ts,tsx}"],
-      plugins: ["@typescript-eslint", "import"],
+      plugins: ["@typescript-eslint", "import", "simple-import-sort"],
       parser: "@typescript-eslint/parser",
       settings: {
         "import/internal-regex": "^~/",
@@ -81,4 +86,19 @@ module.exports = {
       },
     },
   ],
+
+  rules: {
+    "max-lines": [
+      "error",
+      {
+        max: 200,
+        skipBlankLines: true,
+        skipComments: true,
+      },
+    ],
+    "no-console": "error",
+    "no-debugger": "error",
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+  },
 };

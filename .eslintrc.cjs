@@ -27,6 +27,7 @@ module.exports = {
     "prettier",
     "plugin:import/recommended",
     "plugin:import/typescript",
+    "plugin:tailwindcss/recommended"
   ],
 
   overrides: [
@@ -100,5 +101,6 @@ module.exports = {
     "no-debugger": "error",
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error",
+    "tailwindcss/no-custom-classname": "off",
   },
 };

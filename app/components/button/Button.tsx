@@ -10,7 +10,7 @@ interface ButtonProps extends HTMLAttributes<HTMLButtonElement> {
 export function Button({ label, startIcon, endIcon, additionalClasses, ...rest }: ButtonProps) {
   return (
     <button
-      className={`bg-blue-500 text-white font-bold py-2 px-4 rounded ${additionalClasses}`}
+      className={`rounded bg-blue-500 px-4 py-2 font-bold text-white ${additionalClasses}`}
       type="button"
       {...rest}
     >

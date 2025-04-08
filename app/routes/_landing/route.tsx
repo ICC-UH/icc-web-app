@@ -10,7 +10,7 @@ export default function Landing() {
     <>
       <Header />
       <Glow position="top-left" />
-      <div className="relative mx-auto flex w-full max-w-[1440px] flex-1 justify-center overflow-hidden px-4">
+      <div className="mx-auto flex w-full max-w-[1440px] flex-1 justify-center px-4">
         <Outlet />
       </div>
       <Glow position="bottom-right" />

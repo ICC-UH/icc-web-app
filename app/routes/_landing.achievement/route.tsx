@@ -2,6 +2,7 @@ import type { MetaFunction } from "@remix-run/node";
 
 import { MainContainer } from "~/components/container/MainContainer";
 import { Divider } from "~/components/divider";
+import { Title } from "~/components/typography";
 
 import AchievementCard from "./common/AchievementCard";
 
@@ -12,9 +13,9 @@ export const meta: MetaFunction = () => {
 export default function Achievement() {
   return (
     <MainContainer>
-      <h1 className="text-center text-[55px] font-semibold">Achievement</h1>
+      <Title>Achievement</Title>
 
-      <section className="-mt-10 flex flex-col gap-4">
+      <section className="flex flex-col gap-4">
         <Divider>
           <p className="mx-[54px] w-fit text-[32px]">2025</p>
         </Divider>

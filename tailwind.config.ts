@@ -22,7 +22,10 @@ export default {
         secondary: "#252525",
         tertiary: "#0C0E14",
         background: "#0F1219",
-        border: "#A54E00",
+        border: {
+          DEFAULT: "#A54E00",
+          dark: "#703500",
+        },
       },
       keyframes: {
         bounceGlow: {
@@ -30,12 +33,12 @@ export default {
           "50%": { transform: "translateY(-20px) scale(1.05)" },
         },
         bounceUp: {
-          "0%, 100%": { transform: "translateY(10%) scale(0.9)" },
-          "50%": { transform: "translateY(-10%) scale(1)" },
+          "0%, 100%": { transform: "translateY(10%) scale(0.9)", opacity: "0.4" },
+          "50%": { transform: "translateY(-10%) scale(1)", opacity: "0.7" },
         },
         bounceDown: {
-          "0%, 100%": { transform: "translateY(-10%) scale(0.9)" },
-          "50%": { transform: "translateY(10%) scale(1)" },
+          "0%, 100%": { transform: "translateY(-10%) scale(0.9)", opacity: "0.4" },
+          "50%": { transform: "translateY(10%) scale(1)", opacity: "0.7" },
         },
       },
       animation: {

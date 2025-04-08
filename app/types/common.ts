@@ -1,1 +1,1 @@
-export type TCtfCategory = "web" | "crypto" | "pwn" | "rev" | "misc" | "forensic" | "osint";
+export type TCtfCategory = "web" | "crypto" | "pwn" | "reverse" | "misc" | "forensic" | "osint";

@@ -18,11 +18,11 @@ export default function AchievementCard({
   certificateUrl,
 }: AchievementCardProps) {
   return (
-    <div className="flex w-[min(400px,100%)] flex-col gap-6 rounded-[16px] border border-border bg-background px-5 py-6">
+    <div className="flex w-[min(400px,100%)] flex-col gap-6 rounded-[16px] border border-border-dark bg-tertiary px-5 py-6">
       <section className="flex items-start gap-2">
         <div className="relative size-[90px]">
           <div
-            className={`${rank === 1 ? "fill-[#DAB900]" : rank === 2 ? "fill-[#7B7B7B]" : rank === 3 ? "fill-[#B45500]" : "fill-white"} h-full w-full`}
+            className={`${rank === 1 ? "fill-[#DAB900]" : rank === 2 ? "fill-[#7B7B7B]" : rank === 3 ? "fill-[#B45500]" : "fill-white"} size-full`}
           >
             <svg
               width="80"

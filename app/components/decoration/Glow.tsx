@@ -23,7 +23,7 @@ export const Glow = ({
 
   return (
     <div
-      className={`fixed -z-10 rounded-full opacity-70 ${position.includes("bottom") ? "animate-bounceUp" : "animate-bounceDown"} ${positionStyles[position]} ${className}`}
+      className={`fixed -z-10 rounded-full opacity-80 ${position.includes("bottom") ? "animate-bounceUp" : "animate-bounceDown"} ${positionStyles[position]} ${className}`}
       style={{
         width: `${width}`,
         height: `${height}`,
